@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import torch
 
-from . import general
+from yolov5_face.utils import general
 
 
 def fitness(x):

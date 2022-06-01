@@ -13,10 +13,10 @@ sys.path.append('./')  # to run '$ python *.py' files in subdirectories
 import torch
 import torch.nn as nn
 
-from yoloface.models.experimental import attempt_load
-from yoloface.models.common import Conv
-from yoloface.utils.activations import Hardswish, SiLU
-from yoloface.utils.general import set_logging, check_img_size
+from yolov5_face.models.experimental import attempt_load
+from yolov5_face.models.common import Conv
+from yolov5_face.utils.activations import Hardswish, SiLU
+from yolov5_face.utils.general import set_logging, check_img_size
 import onnx
 
 if __name__ == '__main__':
