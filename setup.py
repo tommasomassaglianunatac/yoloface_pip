@@ -27,7 +27,7 @@ setuptools.setup(
         'yolov5_face.models',
         'yolov5_face.utils',
     ],
-    package_dir={'yolov5_face':'.'},
+    package_dir={'yolov5_face/':'.'},
     package_data={'weights': ['*.pt'],'models': ['*.yaml']},
     classifiers=[
         "Programming Language :: Python :: 3",
