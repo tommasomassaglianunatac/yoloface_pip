@@ -23,11 +23,11 @@ setuptools.setup(
     long_description_content_type='text/markdown',
     url=GITHUB_URL,
     packages=[
-        'face_detector',
-        'face_detector.models',
-        'face_detector.utils',
+        'yolov5_face',+
+        'yolov5_face.models',
+        'yolov5_face.utils',
     ],
-    package_dir={'yolov5-face':'.'},
+    package_dir={'yolov5_face':'.'},
     package_data={'weights': ['*.pt'],'models': ['*.yaml']},
     classifiers=[
         "Programming Language :: Python :: 3",
