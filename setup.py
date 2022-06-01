@@ -22,12 +22,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     url=GITHUB_URL,
-    packages=[
-        'yolov5_face',
-        'yolov5_face.models',
-        'yolov5_face.utils',
-        'yolov5_face.weights',
-    ],
+    packages=setuptools.find_packages(),
     package_dir={'yolov5_face':'.'},
     package_data={'': ['*.pt'],'': ['*.yaml']},
     classifiers=[
