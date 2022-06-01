@@ -22,9 +22,14 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     url=GITHUB_URL,
-    packages=setuptools.find_packages(),
+    packages=[
+        'yolov5_face',
+        'yolov5_face.models',
+        'yolov5_face.utils',
+        'yolov5_face.weights',
+    ],
     package_dir={'yolov5_face':'.'},
-    package_data={'': ['*.pt'],'': ['*.yaml']},
+    package_data={'weights': ['*.pt'],'models': ['*.yaml']},
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
