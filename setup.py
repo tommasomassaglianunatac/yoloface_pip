@@ -28,7 +28,7 @@ setuptools.setup(
         'yolov5_face.utils',
     ],
     package_dir={'src':'.'},
-    package_data={'src/yolov5_face/weights': ['*.pt'],'src/yolov5_face/models': ['*.yaml']},
+    package_data={'yolov5_face/weights': ['*.pt'],'yolov5_face/models': ['*.yaml']},
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
