@@ -1,4 +1,4 @@
-import setuptools
+import setuptools, os
 
 PACKAGE_NAME = 'yolov5-face'
 VERSION = '1.0.0'
@@ -7,16 +7,23 @@ EMAIL = 'https://github.com/elyha7'
 DESCRIPTION = 'The project is a wrap over yolov5-face repo. Made simple portable interface for model import and inference.'
 GITHUB_URL = 'https://github.com/tommasomassaglianunatac/yoloface_pip'
 
+parent_dir = os.path.dirname(os.path.realpath(__file__))
+import_name = os.path.basename(parent_dir)
+
+with open('{}/README.md'.format(parent_dir), 'r') as f:
+    long_description = f.read()
+
 setuptools.setup(
     name=PACKAGE_NAME,
     version=VERSION,
     author=AUTHOR,
     author_email=EMAIL,
     description=DESCRIPTION,
+    long_description=long_description,
     long_description_content_type='text/markdown',
     url=GITHUB_URL,
     packages=[
-        'yolov5_face',+
+        'yolov5_face',
         'yolov5_face.models',
         'yolov5_face.utils',
     ],
