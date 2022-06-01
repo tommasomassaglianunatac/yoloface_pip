@@ -27,7 +27,7 @@ setuptools.setup(
         'face_detector.models',
         'face_detector.utils',
     ],
-    package_dir={'face_detector':'.'},
+    package_dir={'yolov5-face':'.'},
     package_data={'weights': ['*.pt'],'models': ['*.yaml']},
     classifiers=[
         "Programming Language :: Python :: 3",
