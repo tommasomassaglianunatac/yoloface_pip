@@ -1,0 +1,18 @@
+[build-system]
+requires = ["thop",
+"scipy",
+"seaborn",
+"joblib",
+"matplotlib",
+"torch",
+"pandas",
+"opencv_python",
+"tqdm",
+"numpy",
+"torchvision",
+"requests",
+"Pillow",
+"PyYAml",
+"wandb"
+]
+build-backend = "setuptools.build_meta"

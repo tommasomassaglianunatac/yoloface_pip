@@ -161,6 +161,3 @@ class YoloDetector:
 
     def __call__(self,*args):
         return self.predict(*args)
-
-if __name__=='__main__':
-    a = YoloFace()
