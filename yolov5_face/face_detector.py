@@ -112,7 +112,7 @@ class YoloDetector:
                 lm = [lm[i:i+2] for i in range(0,len(lm),2)]
                 bboxes[i].append(box)
                 landmarks[i].append(lm)
-        return bboxes, landmarks
+        return bboxes[0], landmarks[0]
 
     def get_frontal_predict(self, box, points):
         '''
