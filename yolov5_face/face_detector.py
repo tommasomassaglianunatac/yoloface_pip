@@ -132,7 +132,7 @@ class YoloDetector:
         else:
             return False
 
-    def predict(self, imgs, conf_thres = 0.3, iou_thres = 0.5):
+    def predict(self, imgs, conf_thres = 0.25, iou_thres = 0.45):
         '''
             Get bbox coordinates and keypoints of faces on original image.
             Params:
